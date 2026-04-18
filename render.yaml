@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: walmart-dashboard
+    runtime: php
+    buildCommand: echo "No build needed"
+    startCommand: php -S 0.0.0.0:$PORT
+    envVars:
+      - key: PHP_VERSION
+        value: 8.1.0
